@@ -301,11 +301,11 @@ p.state {
 }
 
 .table-container {
-    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60%;
+    height: auto;
     color: #ffffff;
     flex-direction: column;
     background: rgba(141, 140, 140, 0.3);
@@ -314,6 +314,10 @@ p.state {
     border-radius: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.container-for-table-page {
+    gap: 30px;
 }
 
 .table-header {
