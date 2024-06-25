@@ -28,4 +28,11 @@ function nextBtn() {
     else {
         alert('Please select all Parameters!');
     }
+
+    localStorage.setItem("stateValue", stateOutput);
+}
+
+window.onload = function() {
+    const stateValue = localStorage.getItem("stateValue");
+    document.querySelector('p.state').textContent = stateValue;
 }
