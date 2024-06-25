@@ -10,6 +10,10 @@ html {
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
     background-image: url("../Assets/bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,6 +21,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 100px;
 }
 
 nav {
@@ -28,6 +35,10 @@ nav {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
+}
+
+.nav {
+    width: 100%;
 }
 
 .navbar {
@@ -44,11 +55,17 @@ nav {
     padding-left: 30px;
     padding-right: 30px;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 600;
     border-radius: 40px;
     border: 1px solid #ffffff;
+}
+
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar img {
@@ -78,4 +95,103 @@ nav {
 .chatbot img {
     width: 50px;
     height: 50px;
+}
+
+.home, .chatbot, .navbar-title {
+    cursor: pointer;
+}
+
+.content {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: rgba(141, 140, 140, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 5px rgba(141, 140, 140, 0.8);
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content-title p {
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 180%;
+}
+
+.content-parameters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.state, .district, .crime, .year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.state {
+    gap: 50px;
+}
+
+.district {
+    gap: 39px;
+}
+
+.crime {
+    gap: 45px;
+}
+
+.year {
+    gap: 55px;
+    margin-bottom: 30px;
+}
+
+.content-parameters select {
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.next-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button#next {
+    background: rgba(67, 11, 11, 0.6);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(67, 11, 11);
 }
