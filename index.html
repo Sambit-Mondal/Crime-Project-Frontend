@@ -4,39 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./Assets/state-emblem.png" type="image/x-icon">
+    <title>CRIME</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
+    <div class="container">
 
-    <!-- NAVBAR -->
-    <nav>
+        <!-- NAVBAR -->
+        <div class="nav">
+            <nav>
 
-        <!-- HOME BUTTON -->
-        <div class="home" onclick="window.location.href = 'index.html'">
-            <img src="./Assets/home.png" alt="Home">
+
+                <!-- HOME BUTTON -->
+                <div class="home" onclick="window.location.href = 'index.html'">
+                    <img src="./Assets/home.png" alt="Home">
+                </div>
+
+
+                <!-- NAVBAR MAIN -->
+                <div class="navbar">
+                    <div class="navbar-logo">
+                        <img src="./Assets/state-emblem.png" alt="State emblem">
+                    </div>
+                    <div class="navbar-title">
+                        <p onclick="window.location.reload">CRIME</p>
+                    </div>
+                    <div class="navbar-logo">
+                        <img src="./Assets/judiciary.png" alt="Judiciary">
+                    </div>
+                </div>
+
+
+                <!-- CHATBOT -->
+                <div class="chatbot">
+                    <img src="./Assets/chatbot.png" alt="Chatbot">
+                </div>
+            </nav>
         </div>
 
-        <!-- NAVBAR MAIN -->
-        <div class="navbar">
-            <div class="navbar-logo-left">
-                <img src="./Assets/state-emblem.png" alt="State emblem">
-            </div>
-            <div class="navbar-title">
-                <p onclick="window.location.reload">CRIME</p>
-            </div>
-            <div class="navbar-logo-right">
-                <img src="./Assets/judiciary.png" alt="Judiciary">
-            </div>
-        </div>
 
 
-        <!-- CHATBOT -->
-        <div class="chatbot">
-            <img src="./Assets/chatbot.png" alt="Chatbot">
+        <!-- CONTENT -->
+        <div class="content">
+
+
+            <!-- TITLE -->
+            <div class="content-title">
+                <p>SELECT THE PARAMETERS</p>
+                <hr>
+            </div>
+            <div class="content-parameters">
+
+                <!-- STATE -->
+                <div class="state">
+                    <p>Select a State:</p>
+                    <select name="state" id="state" onchange="enableOthers(this)" required>
+                        <option value="0">Select a State</option>
+                        <option value="{{state}}">{{state}}</option>
+                    </select>
+                </div>
+
+
+                <!-- DISTRICT -->
+                <div class="district">
+                    <p>Select a District:</p>
+                    <select name="district" id="district" disabled required>
+                        <option value="0">Select a District</option>
+                        <option value="{{district}}">{{district}}</option>
+                    </select>
+                </div>
+
+
+                <!-- CRIME -->
+                <div class="crime">
+                    <p>Select a Crime:</p>
+                    <select name="crime" id="crime" disabled required>
+                        <option value="0">Select a Crime</option>
+                        <option value="{{crime}}">{{crime}}</option>
+                    </select>
+                </div>
+
+
+                <!-- YEAR -->
+                <div class="year">
+                    <p>Select a Year:</p>
+                    <select name="year" id="year" disabled required>
+                        <option value="0">Select a State</option>
+                        <option value="{{year}}">{{year}}</option>
+                    </select>
+                </div>
+
+
+                <!-- NEXT BUTTON -->
+                <div class="next-btn">
+                    <button type="submit" id="next" onclick="window.location.href='html-files/graph-page.html'">NEXT</button>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+
+
+    <!-- SCRIPT -->
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
