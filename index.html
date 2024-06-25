@@ -5,19 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo-left">
-            <img src="./Assets/state-emblem.png" alt="State emblem">
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <!-- HOME BUTTON -->
+        <div class="home" onclick="window.location.href = 'index.html'">
+            <img src="./Assets/home.png" alt="Home">
         </div>
-        <div class="navbar-title">
-            <p>CRIME</p>
+
+        <!-- NAVBAR MAIN -->
+        <div class="navbar">
+            <div class="navbar-logo-left">
+                <img src="./Assets/state-emblem.png" alt="State emblem">
+            </div>
+            <div class="navbar-title">
+                <p onclick="window.location.reload">CRIME</p>
+            </div>
+            <div class="navbar-logo-right">
+                <img src="./Assets/judiciary.png" alt="Judiciary">
+            </div>
         </div>
-        <div class="navbar-logo-right">
-            <img src="./Assets/judiciary.png" alt="Judiciary">
+
+
+        <!-- CHATBOT -->
+        <div class="chatbot">
+            <img src="./Assets/chatbot.png" alt="Chatbot">
         </div>
     </nav>
 </body>
