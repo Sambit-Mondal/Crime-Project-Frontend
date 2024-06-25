@@ -301,6 +301,7 @@ p.state {
 }
 
 .table-container {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,6 +312,7 @@ p.state {
     background: rgba(141, 140, 140, 0.3);
     backdrop-filter: blur(10px);
     border: 2px solid rgb(141, 140, 140);
+    box-shadow: 1px 1px 20px 7px rgba(141, 140, 140, 0.8);
     border-radius: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -375,4 +377,54 @@ td {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.buttons button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(141, 140, 140, 0.8);
+    border: 2px solid rgb(141, 140, 140);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.buttons button i {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+@media print {
+    .home, .table-header, .buttons, hr {
+        display: none;
+    }
+
+    .table-container {
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        color: #000000;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px;
+        border: 2px solid #000000;
+    }
 }
