@@ -299,3 +299,76 @@ p.state {
     align-items: center;
     justify-content: center;
 }
+
+.table-container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    color: #ffffff;
+    flex-direction: column;
+    background: rgba(141, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(141, 140, 140);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.table-header {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.table-home {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+hr {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+tr.table-row-head {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.state-head, .district-head, .year-head, .attempt-to-murder-head {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    gap: 20px;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    padding: 10px;
+}
+
+td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
